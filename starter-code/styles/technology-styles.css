@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #d0d6f9;
+    --background-color: #0b0d17; 
+    --title-font: 'Bellefair', serif;
+    --text-font: 'Barlow Condensed', sans-serif;
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-font);
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Styles for the main content*/
+.technology {
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+}
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 15%;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+h1 span {
+    font-size: inherit;
+    font-weight: 600;
+    letter-spacing: 15%;
+    color: var(--secondary-color);
+    margin-inline-end: 1.5rem;
+    letter-spacing: inherit;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+.technology-equipment {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.technology-image-container {
+    padding-top: 4rem;
+}
+.technology-image-container img {
+    max-width: none;
+    width:100vw;
+}
+.technology-nav{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 1rem;
+}
+.technology-nav a {
+    display: flex;
+    text-decoration: none;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(255,255,255, 0.25);
+    color: var(--primary-color);
+}
+.technology-nav a.active {
+    border-right: none;
+    background:var(--primary-color);
+    color: var(--background-color);
+}
+.technology-nav a:hover,
+.technology-nav a:focus {
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+.tech-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.125rem;
+    font-family: var(--title-font);
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+h2 span.translucent {
+    opacity: 50%;
+    mix-blend-mode: normal;
+}
+h2 span {
+    opacity: 1;
+    font-family: var(--title-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+p {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    line-height:180%;
+}
+@media (min-width: 768px) {
+  main {
+    padding:2.5rem;
+    padding-bottom: 0;
+    align-items: flex-start;
+  }
+  .technology {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+  h1 {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  .tech-info {
+    align-items: center;
+  }
+  h2 span.translucent {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .technology-nav a {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .technology {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
+  main {
+    padding-bottom: 2.5rem;
+    padding-block: 3rem;
+    padding-inline: 6rem;
+  }
+  h1 {
+    margin-right: 6rem;
+  }
+  section {
+    margin-block: auto;
+    flex-direction: row-reverse;
+    justify-content: baseline;
+    gap: 2rem;
+  }
+  section > div {
+    width:calc(50% - 1rem);
+  }
+  .technology-image-container img{
+    max-width:100%;
+    width:100%;
+    -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
+    mask-image: radial-gradient(circle, black 90%, transparent 100%);
+  }
+  .technology-equipment {
+    flex-direction: row;
+    gap:4rem;
+  }
+  .technology-nav {
+    flex-direction: column;
+  }
+  .technology-nav a {
+    height: 5rem;
+    width: 5rem;
+  }
+  h2 span {
+    font-size: 3.5rem;
+  }
+  h2 span.translucent {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+
+}

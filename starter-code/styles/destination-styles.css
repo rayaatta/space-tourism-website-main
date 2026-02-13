@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #d0d6f9;
+    --background-color: #0b0d17; 
+    --title-font: 'Bellefair', serif;
+    --text-font: 'Barlow Condensed', sans-serif;
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-font);
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Add styles for the main content */
+.destination {
+  background-image: url("../assets/destination/background-destination-mobile.jpg");
+}
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 15%;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+h1 span {
+    font-size: inherit;
+    font-weight: 600;
+    letter-spacing: 15%;
+    color: var(--secondary-color);
+    margin-inline-end: 1.5rem;
+    letter-spacing: inherit;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+section img {
+    width:150px;
+    height:150px;
+    margin-block: 1.5rem;
+}
+.destination-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.destination-nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+.destination-nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid transparent;
+}
+.destination-nav a.active {
+    border-right: none;
+    border-bottom: 3px solid var(--primary-color);
+}
+.destination-nav a:hover,
+.destination-nav a:focus {
+    border-bottom: 3px solid var(--secondary-color);
+}
+.destination-description {
+    padding-block: 1.5rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+h2 {
+    font-size: 3.5rem;
+    font-family: var(--title-font);
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--primary-color);
+}
+p {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    line-height:180%;
+}
+.destination-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-block-start: 1.5rem;
+}
+h3 {
+    font-size: 0.88rem;
+    letter-spacing: 2px;
+    color: var(--secondary-color);
+}
+.destination-meta p {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    font-family: var(--title-font);
+}
+@media (min-width: 768px) {
+  main {
+    padding:2.5rem;
+    align-items: flex-start;
+  }
+  .destination {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
+  h1 {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  section img {
+    width: 300px;
+    height: 300px;
+  }
+  .destination-details {
+    max-width: 25rem;
+    padding-inline: auto;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+
+  .destination-meta {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .destination-meta div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .destination {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+  }
+  section {
+    margin-block: auto;
+    padding-inline: 6rem;
+    flex-direction: row;
+    justify-content: baseline;
+    gap: auto;
+  }
+  section img {
+    width: 480px;
+    height: 480px;
+  }
+  .destination-description {
+    padding-block: 2.5rem;
+    gap:1rem;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+  .destination-description p {
+    font-size: 1.125rem;
+    line-height: 180%;
+  }
+  .destination-meta {
+    margin-block-start: 2rem;
+  }
+  
+  
+
+}

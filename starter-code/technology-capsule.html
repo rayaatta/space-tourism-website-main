@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/nav-styles.css">
+  <link rel="stylesheet" href="./styles/technology-styles.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="technology">
+  <header>
+    <div class="logo_container">
+     <img src="./assets/shared/logo.svg" alt="logo">
+    </div>
+    <button class="toggle-menu" aria-label="Open menu">
+     <img src="./assets/shared/icon-hamburger.svg" alt="menu">
+    </button>
+    <nav class="nav">
+      <!-- CLOSE BUTTON INSIDE PANEL -->
+      <button class="close-menu" aria-label="Close menu">
+        <img src="./assets/shared/icon-close.svg" alt="">
+      </button>
+      <ul>
+        <li><a href="index.html"><span>00 </span>Home</a></li>
+        <li><a href="destination-europa.html"><span>01 </span>Destination</a></li>
+        <li><a href="crew-commander.html"><span>02 </span>Crew</a></li>
+        <li><a href="#" class="active" aria-current="page"><span>03 </span>Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1><span>03</span> Space launch 101</h1>
+    <section>
+      <div class="technology-image-container">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./assets/technology/image-space-capsule-portrait.jpg">
+          <img src="./assets/technology/image-space-capsule-landscape.jpg" alt="space capsule with earth in the background">
+        </picture>
+      </div>
+      <div class="technology-equipment">
+        <nav aria-label="Technology selection">
+          <ul class="technology-nav">
+            <li><a aria-label="Space capsule"  aria-current="page" class="active" href="#" id="space-capsule">1</a></li>
+            <li><a aria-label="Spaceport" href="technology-spaceport.html" id="spaceport">2</a></li>
+            <li><a aria-label="Launch vehicle" href="technology-vehicle.html" id="launch-vehicle">3</a></li>
+          </ul>
+        </nav>
+        <div class="tech-info">
+          <h2>
+            <span class="translucent">The terminology...</span>
+            <span>Space capsule</span>
+          </h2>
+          <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+            capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+            you'll spend your time during the flight. It includes a space gym, cinema, 
+            and plenty of other activities to keep you entertained.
+          </p> 
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="./scripts/script.js"></script>
+  <script src="./scripts/technology-script.js" type="text/javascript"></script>
+</body>
+</html>

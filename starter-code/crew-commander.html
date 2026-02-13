@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/nav-styles.css">
+  <link rel="stylesheet" href="./styles/crew-styles.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="crew">
+  <header>
+    <div class="logo_container">
+     <img src="./assets/shared/logo.svg" alt="logo">
+    </div>
+    <button class="toggle-menu" aria-label="Open menu">
+     <img src="./assets/shared/icon-hamburger.svg" alt="menu">
+    </button>
+    <nav class="nav">
+      <!-- CLOSE BUTTON INSIDE PANEL -->
+      <button class="close-menu" aria-label="Close menu">
+        <img src="./assets/shared/icon-close.svg" alt="">
+      </button>
+      <ul>
+        <li><a href="index.html"><span>00 </span>Home</a></li>
+        <li><a href="destination-europa.html"><span>01 </span>Destination</a></li>
+        <li><a href="#" class="active" aria-current="page"><span>02 </span>Crew</a></li>
+        <li><a href="technology-capsule.html"><span>03 </span>Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1><span>02</span> Meet your crew</h1>
+    <section>
+      <div class="crew-members">
+        <div class="crew-member-info">
+          <h2>Commander</h2>
+          <h3>Douglas Hurley</h3>
+          <p>
+            Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+            and former NASA astronaut. He launched into space for the third time as 
+            commander of Crew Dragon Demo-2.
+          </p>
+        </div>
+        <nav>
+          <ul class="crew-nav">
+            <li><a href="#" class="active" aria-current="page" id="douglas-hurley"></a></li>
+            <li><a href="crew-engineer.html" id="anousheh-ansari"></a></li>
+            <li><a href="crew-pilot.html" id="victor-glover"></a></li>
+            <li><a href="crew-specialist.html" id="mark-shuttleworth"></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="crew-image-container">
+        <img src="./assets/crew/image-douglas-hurley.png" alt="commander image">
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="./scripts/script.js"></script>
+  <script type="text/javascript" src="./scripts/crew-script.js"></script>
+</body>
+</html>

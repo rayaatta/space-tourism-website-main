@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/destination-styles.css">
+  <link rel="stylesheet" href="./styles/nav-styles.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="destination">
+  <header>
+    <div class="logo_container">
+     <img src="./assets/shared/logo.svg" alt="logo">
+    </div>
+    <button class="toggle-menu" aria-label="Open menu">
+     <img src="./assets/shared/icon-hamburger.svg" alt="menu">
+    </button>
+    <nav class="nav">
+      <!-- CLOSE BUTTON INSIDE PANEL -->
+      <button class="close-menu" aria-label="Close menu">
+        <img src="./assets/shared/icon-close.svg" alt="">
+      </button>
+      <ul>
+        <li><a href="index.html"><span>00 </span>Home</a></li>
+        <li><a href="#" class="active" aria-current="page"><span>01 </span>Destination</a></li>
+        <li><a href="crew-commander.html"><span>02 </span>Crew</a></li>
+        <li><a href="technology-capsule.html"><span>03 </span>Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1><span>01</span> Pick your destination</h1>
+    <section>
+      <div class="destination-image-container">
+        <img src="./assets/destination/image-europa.png" alt="europa">
+      </div>
+      <div class="destination-details">
+        <nav class="destination-nav">
+          <ul>
+            <li><a href="destination-moon.html" id="moon">Moon</a></li>
+            <li><a href="destination-mars.html" id="mars">Mars</a></li>
+            <li><a href="#" class="active" aria-current="page" id="europa">Europa</a></li>
+            <li><a href="destination-titan.html" id="titan">Titan</a></li>
+          </ul>
+        </nav>
+        <div class="destination-description">
+          <h2>Europa</h2>
+          <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+            winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+            ice skating, curling, hockey, or simple relaxation in your snug wintery 
+            cabin.
+          </p>
+        </div>
+        <div class="destination-meta">
+          <div class="distance">
+            <h3>Avg. Distance</h3>
+            <p>628 MIL. KM</p>
+          </div>
+          <div class="travel-time">
+            <h3>Est. Travel Time</h3>
+            <p>3 YEARS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<script src="./scripts/script.js" type="text/javascript"></script>
+<script src="./scripts/destination-script.js" type="text/javascript"></script>
+</body>
+</html>

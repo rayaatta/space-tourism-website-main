@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #d0d6f9;
+    --background-color: #0b0d17; 
+    --title-font: 'Bellefair', serif;
+    --text-font: 'Barlow Condensed', sans-serif;
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-font);
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Add styles for the main content */
+.home {
+  background-image: url("../assets/home/background-home-mobile.jpg");
+}
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem; 
+}
+h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+h1 span {
+    font-family: var(--title-font);
+    font-size: 5rem;
+    color: var(--primary-color);
+    display: block;
+    margin-block: 2rem;
+    letter-spacing: 0px;
+}
+p {
+    color:var(--secondary-color);
+    line-height: 1.75rem;
+}
+.explore-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.btn-explore {
+  display: inline-block;
+  background: white;
+  color: var(--background-color);
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+  line-height: 9rem;
+  margin-block:4.5rem;
+  padding-inline:auto;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 0 0 rgba(255,255,255,0);
+}
+
+.btn-explore:hover,
+.btn-explore:focus {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 5.5rem rgba(255,255,255,0.2);
+  outline: none;
+  color:var(--secondary-color)
+}
+
+@media (min-width: 768px) {
+  main {
+    padding:8rem;
+    padding-inline: 2.5rem;
+  }
+  .home {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+  .btn-explore {
+    width: 15rem;
+    height: 15rem;
+    line-height: 15rem;
+    margin-block:7.5rem;
+  }
+
+.btn-explore:hover,
+.btn-explore:focus {
+  box-shadow: 0 0 0 3.5rem rgba(255,255,255,0.2);
+}
+  h1 {
+    font-size: 1.75rem;
+    letter-spacing: 4px;
+  }
+  h1 span {
+    font-size: 9rem;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .home {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+  }
+  main {
+    margin-block: auto;
+    padding-inline: 6rem;
+    flex-direction: row;
+    justify-content: baseline;
+    gap: auto;
+  }
+  .hero-content {
+    text-align: start;
+  }
+  h1 {
+    text-align: inherit;
+  }
+  p {
+    font-size: 1.125rem;
+    max-width: 450px;
+  }
+
+}
